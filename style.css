@@ -1,6 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --white: #fafafa;
+    --black: #2a283e;
+    --paleGray: #8c8c9a;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--white);
+    color: var(--black)
+}
+
+
+main {
+    /* border: 1px solid var(--paleGray); */
+    overflow: hidden;
+
+    margin: 0 auto;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+button {
+    cursor: pointer;
+}
+button span {
+    opacity: .6;
+}
+
+
+
+
+/* LAYOUT */
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+    
+}
+/* =================================================================== */
+.container {
+    display: flex; 
+    flex-wrap: wrap;
+}
+    .left-partition {
+        width: 50%;
+        height: 200px;
+        background-size: 24em;
+        background-repeat: no-repeat;
+        background-image: url(./assets/tablet/image-hero.png);
+        background-position-y: 50%;
+        background-position-x: 2%;
+        order: 1;
+    }
+    .right-partition {
+        width: 50%;
+        height: 200px;
+        background-size: 24em;
+        background-repeat: no-repeat;
+        background-image: url(./assets/tablet/image-hero.png);
+        background-position-y: 50%;
+        background-position-x: 96%;   
+        order: 2;
+    }
+
+
+
+    .text-content-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 3;
+
+    }
+        .text-content-1 h1{
+            text-align: center;
+            margin-bottom: .8em;
+            font-weight: 900;
+            font-size: 2em;
+        }
+
+        .text-content-1 p{
+            text-align: center;
+            max-width: 85%;
+            font-weight: 500;
+            opacity: .7;
+            margin-bottom: 1.2em;
+        }
+        .text-content-1 .btns-wr {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+            .btns-wr .download-btn {
+                width: 50%;
+                border: none;
+                border-radius: 25px;
+                padding: 1.5em;
+                background-color: #4d96a9;
+                color: var(--white);
+                font-weight: 700;
+                margin-bottom: 1em;
+            }
+            .btns-wr .info-btn {
+                width: 40%;
+                border: none;
+                border-radius: 25px;
+                background-color: #855fb2;
+                color: var(--white);
+                font-weight: 700;
+                padding: 1.5em;
+                margin-bottom: 3em;
+            }
+/* =================================================================== */
+.step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+    .step .line {
+        border-right: 1px solid var(--paleGray);
+        width: 0;
+        height: 4em;
+    }
+    .step .circle {
+        background-color: var(--white);
+        border: 1px solid var(--paleGray);
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* =================================================================== */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1em;
+    margin-top: 3em;
+    margin-bottom: 3rem;
+}
+    .gallery img {
+        width: 45%;
+        border-radius: 10%;
+        margin-bottom: 1em;
+    }
+
+.text-content-2 {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+    .text-content-2 h3 {
+        text-align: center;
+        margin-bottom: 1.1em;
+        color: #5599a1;
+        letter-spacing: .2em;
+        font-weight: 900;
+    }
+    .text-content-2 h1 {
+        text-align: center;
+        margin-bottom: 1em;
+        font-size: 2em;
+        font-weight: 900;
+    }
+    .text-content-2 p {
+        text-align: center;
+        color: var(--paleGray);
+        font-weight: 700;
+    }
+
+/* =================================================================== */
+
+footer {
+    margin-top: -1.5em;
+    background-image: 
+    linear-gradient(#3fadc9cb,#3fadc9cb)
+    ,url(./assets/mobile/image-footer.jpg);
+    height: 25em;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    footer h1 {
+        text-align: center;
+        color: var(--white);
+        font-weight: 900;
+        margin-bottom: 1em;
+    }
+    footer p {
+        text-align: center;
+        color: var(--white);
+        font-weight: 700;
+        width: 80%;
+        margin-bottom: 1em;
+    }
+    footer button {
+            width: 50%;
+            border: none;
+            border-radius: 25px;
+            padding: 1.5em;
+            background-color: #855fb2;
+            color: var(--white);
+            font-weight: 700;
+            margin-bottom: 1em;
+            font-weight: 700;
+    }
+
+
+
+
+/* MEDIA */
+
+@media (min-width: 768px) {
+    main {
+        max-width: 720px;
+    }
+
+    .left-partition {
+        width: 50%;
+        height: 280px;
+        background-size: cover;
+    }
+    .right-partition {
+        width: 50%;
+        height: 280px;
+        background-size: cover;
+    }
+    .text-content-1 {
+        margin-top: 2em;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .text-content-1 h1 {
+        font-size: 2.4em;
+        line-height: 1.1em;
+    }
+    .text-content-1 p {
+        width: 60%;
+        line-height: 1.6em;
+        margin-bottom: 2em;
+    }
+    .text-content-1 .btns-wr {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4em;
+        width: 60%;
+    }
+        .btns-wr .download-btn {
+            margin: 0;
+            margin-right: 1em;
+        }
+        .btns-wr .info-btn {
+            margin: 0;
+        }
+
+    .gallery img {
+        width: 24%;
+    }
+
+    .text-content-2 {
+        margin-bottom: 2em;
+    }
+    .text-content-2 h1 {
+        width: 50%;
+        font-size: 2.3rem;
+        font-weight: 900;
+    }
+    .text-content-2 p {
+        width: 80%;
+        line-height: 1.5em;
+        
+    }
+
+    .text-content-3 button{
+        margin-top: 2em;
+        width: 40%;
+    }
+}
