@@ -306,6 +306,8 @@ footer {
     }
 }
 
+
+
 @media (min-width: 1410px) {
     main {
         max-width: 100%;
@@ -335,6 +337,52 @@ footer {
         margin-left:auto;
         margin-right: auto;
         order: 2;
+    }
+    .text-content-1 p {
+        width: 100%;
+    }
+    .text-content-1 .download-btn {
+        width: 70%;
+    }
+    .text-content-1 .info-btn {
+        width: 50%;
+    }
+
+    .gallery {
+        margin: 2em auto;
+        width: 70%;
+    }
+
+    .text-content-2 h1{
+        width: 28%;
+    }
+    .text-content-2 p{
+        width: 38%;
+    }
+
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5em 10em;
+        height: 18em;
+        background-image: 
+        linear-gradient(#3fadc9cb,#3fadc9cb)
+        ,url(./assets/desktop/image-footer.jpg);
+    }
+
+    footer h1 {
+        /* width: 40%; */
+        text-align: left;
+    }
+    footer p {
+        width: 30%;
+        text-align: left;
+        font-weight: 400;
+        color: #ececec;
+    }
+    footer .download-btn{
+        width: 20%;
     }
 
 }
