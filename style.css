@@ -305,3 +305,36 @@ footer {
         width: 40%;
     }
 }
+
+@media (min-width: 1410px) {
+    main {
+        max-width: 100%;
+    }
+
+    .container {
+        justify-content: space-between;
+    }
+
+    .left-partition {
+        width: 23em;
+        height: 280px;
+        background-size: cover;
+        order: 1;
+        background-position-x: 5%;
+    }
+    .right-partition {
+        width: 23em;
+        height: 280px;
+        background-size: cover;
+        order: 3;
+        background-position-x: 99%;
+    }
+    .text-content-1 {
+        width: 32%;
+        margin-top: 2em;
+        margin-left:auto;
+        margin-right: auto;
+        order: 2;
+    }
+
+}
