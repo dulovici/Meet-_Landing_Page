@@ -61,7 +61,7 @@ header {
         width: 3.2em;
         height: 3.2em;
         border-radius: 50%;
-        margin-bottom: 1em;
+        margin-bottom: 1.3em;
     }
 
 .left-side {
@@ -77,8 +77,9 @@ header {
 
     .left-side .l1,
     .left-side .l3{
-        padding-top: 2em;
+        padding-top: 2.4em;
     }
+    
 
 .right-side {
     width: 50%;
@@ -93,7 +94,7 @@ header {
     }
 
     .right-side .r2{
-        padding-top: 2em;
+        padding-top: 2.4em;
     }
 
     .text-content-1 {
@@ -262,6 +263,7 @@ footer {
     .right-side div {
             margin-left: .1em;
     }
+    
 }
 
 @media (min-width: 768px) {
@@ -276,6 +278,7 @@ footer {
         .left-side div {
                 margin-right: 1.5em;
         }
+        
         .right-side div {
                 margin-left: 1.5em;
         }
@@ -350,14 +353,14 @@ footer {
             order: 1;
         }
             .left-side div {
-                margin-right: 3em;
+                margin-right: 2em;
             }
         .right-side {
             width: 23em;
             order: 2;
         }
             .right-side div {
-                margin-left: 3em;
+                margin-left: 2em;
             }
 
         .text-content-1 {
@@ -412,5 +415,4 @@ footer {
             footer .download-btn{
                 width: 20%;
             }
-
 }
