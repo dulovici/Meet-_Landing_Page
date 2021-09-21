@@ -399,7 +399,7 @@ footer {
         padding: 5em 10em;
         height: 18em;
         background-image: 
-        linear-gradient(#3fadc9cb,#3fadc9cb)
+        linear-gradient(#4d96a8ea,#4d96a8e5)
         ,url(./assets/desktop/image-footer.jpg);
     }
 
@@ -416,3 +416,4 @@ footer {
                 width: 20%;
             }
 }
+
