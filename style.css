@@ -5,6 +5,7 @@
     --white: #fafafa;
     --black: #2a283e;
     --paleGray: #8c8c9a;
+    --deepBlue: #4d96a8e5;
 }
 
 * {
@@ -32,7 +33,7 @@ button {
     cursor: pointer;
 }
     button:hover {
-        filter: brightness(1.15);
+        filter: brightness(1.25);
     }
     button span {
         opacity: .6;
@@ -218,7 +219,7 @@ header {
 footer {
     margin-top: -1.5em;
     background-image: 
-    linear-gradient(#3fadc9cb,#3fadc9cb)
+    linear-gradient(var(--deepBlue),var(--deepBlue))
     ,url(./assets/mobile/image-footer.jpg);
     height: 25em;
     background-size: cover;
@@ -338,7 +339,7 @@ footer {
 
 
 
-@media (min-width: 1410px) {
+@media (min-width: 1210px) {
     main {
         max-width: 100%;
     }
@@ -375,9 +376,11 @@ footer {
             }
             .text-content-1 .download-btn {
                 width: 70%;
+                padding: 1.2em;
             }
             .text-content-1 .info-btn {
                 width: 50%;
+                padding: 1.2em;
             }
 
     .gallery {
@@ -399,7 +402,7 @@ footer {
         padding: 5em 10em;
         height: 18em;
         background-image: 
-        linear-gradient(#4d96a8ea,#4d96a8e5)
+        linear-gradient(var(--deepBlue),var(--deepBlue))
         ,url(./assets/desktop/image-footer.jpg);
     }
 
